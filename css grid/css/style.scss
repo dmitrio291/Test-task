@@ -1,0 +1,156 @@
+body {
+    background-color: #1D33C4;
+    color: #1D33C4;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 35px;
+}
+
+.header {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.socials {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socials__item {
+    display: inline-block;
+}
+
+.socials__item:first-child {
+    margin-right: 10px;
+}
+
+.socials__img {
+    fill: #ffffff;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.blocks-left {
+    display: flex;
+    flex-basis: 590px;
+    justify-content: space-between;
+    margin-right: 35px;
+}
+
+.block-big,
+.block-small, 
+.block-long {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.block-big {
+    min-height: 297px;
+}
+
+.block-small,
+.block-long {
+    min-height: 135px;
+}
+
+.block-one,
+.blocks-two {
+    min-height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block-one {
+    flex-basis: 278px;
+}
+
+.block-one:first-child {
+    margin-right: 35px;
+}
+
+.blocks-two {
+    flex-basis: 574px;
+}
+
+.block-container {
+    display: flex;
+    justify-content: space-between;
+    .block-big {
+        flex-basis: 270px;
+        margin-right: 35px;
+    }
+}
+
+.block-wrapper {
+    flex-basis: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+    .blocks {
+        display: block;
+    }
+
+    .blocks-left {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .block-one,
+    .block-container .block-big,
+    .block-wrapper {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .blocks-left,
+    .blocks-two,
+    .block-container {
+        display: block;
+    }
+
+    .block-one:first-child,
+    .block-container .block-big { 
+        margin-right: 0;
+    }
+
+    .block-one:first-child,
+    .block-container,
+    .block-container .block-big,
+    .block-container .block-small:first-child {
+        margin-bottom: 30px;
+    }
+
+    .block-container {
+        margin-top: 30px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+}
+
