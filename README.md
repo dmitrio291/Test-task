@@ -1,5 +1,5 @@
 # Test-task
-Drop-down lists, css grid and Front-end development by layout are implemented
+Drop-down lists, responsive css grid and Front-end development by layout are implemented
 
 ## The Instruction for running the project:
 1) Download the zip archive
